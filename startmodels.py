@@ -4,10 +4,10 @@ import os, math, subprocess
 start = 1 # worker1
 end = 22 # n workers+1
 step = 1
-offset = 0 # if workers have been started on other disks (and therefore CPUs / affinities), increment this accordingly
-# ^^ eg if 42 workers have already been loaded on cpus, this should be 42.
+offset = 0 # if workers have been started on other disks on the same PC (and therefore on certain CPUs / affinities), increment this accordingly
+# ^^ eg if 42 workers have already been loaded on cpus on the same machine, this should be 42.
 #cpus = list(range((offset)*2,(end-1+offset)*2, 2)) # <-- this every 2nd thing is BS info. There are only 64 cores reported in win11.
-cpus = list(range((offset)*1,(end-1+offset)*1, step))
+cpus = list(range((offset),(end-1+offset), step))
 print(cpus, len(cpus))
 bind_per_core = True
 for i in range(1, len(cpus)+1): #range(start,end,step):
