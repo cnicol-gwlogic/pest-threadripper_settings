@@ -1,6 +1,13 @@
 # PEST Threadripper Settings
 Notes on optimal AMD threadripper bios settings for fully loaded parallel single thread [PESTPP](https://github.com/usgs/pestpp) workloads
 
+## TL;DR - critical stuff:
+* Fill all ram slots
+* Turn on NUMA nodes per socket == 4 (in BIOS)
+* Disable multi-threading / SMT (in BIOS)
+* Enable DOCP / XMP (in BIOS)
+* Launch parallel instance executions via thread pinning
+
 ## The Issue
 Brand new very expensive PC aimed at allowing me to run more MODFLOW models simultaneously via PESTPP got unbearably bogged down under loads of more than about 20 instances. To the point of uselessness. I badly needed to optimise the hardware for this workload.
 
