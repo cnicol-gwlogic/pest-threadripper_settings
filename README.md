@@ -7,7 +7,7 @@ Brand new very expensive PC aimed at allowing me to run more MODFLOW models simu
 ## Test Setup Details
 * Motherboard: ASUS Pro WS WRX80E-SAGE SE WiFi
 * CPU: AMD Threadripper Pro 5995WX (64 core)
-* RAM: All 8 slots (channels) filled (any less, we potentially choke the system):
+* RAM: All 8 slots (channels) filled (any less, we will choke the system - !! this is critical to maximum performance across all cores !!):
   - Four Kingston Fury Beast 64GB (2x32GB) PC4-25600 (3200Mhz) DDR4, CL16, 16-20-20, 1.35v, XMP 2.0, 2R Dual Rank, Dual Channel Kit, Black Heatsink. Model: Model: KF432C16BBK2/64
   - Four Kingston KF432C16BBK2/32 FURY Beast Black 32GB (2x16GB) PC4-25600 (3200Mhz) DDR4, CL16, 16-20-20, 1.35v, 1Rx8 Single Rank, Dual Channel Kit, Black Heat Spreader. Model: KF432C16BBK2/32. Bought these after I started realsing I had bottleneck issues. Now I have way more ram than I need, but so be it.
 * Cooling: Noctua NH-U14S TR4-SP3 (air  only). Oriented vertically, single fan pushingup  through cooler to top of case.
