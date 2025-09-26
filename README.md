@@ -40,5 +40,5 @@ When launching your PESTPP workers, use the "start /affinity <hex mask>" method,
 You could either do this upon each worker launch into a new command window (eg. "start /affinity \<your per-cpu hex mask> fire_up_a_worker.bat"), or via your PESTPP model command workflow (i.e., feed in the hex string argument upon modflow execution, eg: "start /affinity \<your per-cpu hex mask> modflow pretty_average_model.nam"). Example worker launcher with cpu hex mask affinity option [here](https://github.com/cnicol-gwlogic/pest-threadripper_settings/blob/main/startmodels.py).
 
 ## Other useful info links
-[Discussion re: PEST worker machine builds, including some experience with AMD Epyc CPUs](https://github.com/pypest/pyemu/discussions/568#discussioncomment-13587266)
-[Hands-on description of Threadripper architecture wrt single thread parallel computational loads, including some stuff on managing runs on these CPUS with HTCondor](https://blog.michael.kuron-germany.de/2018/09/amd-ryzen-threadripper-numa-architecture-cpu-affinity-and-htcondor/)
+* [Discussion re: PEST worker machine builds, including some experience with AMD Epyc CPUs](https://github.com/pypest/pyemu/discussions/568#discussioncomment-13587266).
+* [Hands-on description of Threadripper architecture wrt single thread parallel computational loads, including some stuff on managing runs on these CPUS with HTCondor](https://blog.michael.kuron-germany.de/2018/09/amd-ryzen-threadripper-numa-architecture-cpu-affinity-and-htcondor/)
